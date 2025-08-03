@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+
+
+@layer utilities {
+  .font-micro5 {
+    font-family: var(--font-micro5), cursive;
+  }
+}
+.bg-purple-custom {
+  background-color: #8855FF;
+}
+
+:root {
+  font-family: var(--font-thai), sans-serif;
+}
+
+.font-thai {
+  font-family: var(--font-thai), sans-serif;
+}
+
+.font-geist {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+
+
+
+body {
+  background: black;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-custom {
+  animation: spin 8s linear infinite;
+}
