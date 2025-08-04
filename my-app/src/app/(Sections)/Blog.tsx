@@ -26,12 +26,13 @@ export default async function Blog() {
   const json: BlogResponse = await res.json();
   const data = json.data
   return (
-    <div className=''>
-      <div className='mx-8 my-8 flex justify-between'>
+    <div className='lg:w-[900px] mx-auto'>
+  
+      <div className='mx-2 my-8 flex justify-between'>
         <h1 className=' text-4xl font-bold text-white'>Blogs</h1>
         <button className='bg-white rounded-4xl p-2 text-base px-8 font-bold'>View all</button>
       </div>
-      <div className='mx-auto  sm:w-3/4 xl:w-full p-2 space-y-12'>
+      <div className='mx-auto  sm:w-3/4 xl:w-[900px] p-2 space-y-12'>
         {data.map((item) => (
           <div className='bg-white max-h-full   lg:flex rounded-4xl  ' key={item.id}>
             <div className='w-full   '>

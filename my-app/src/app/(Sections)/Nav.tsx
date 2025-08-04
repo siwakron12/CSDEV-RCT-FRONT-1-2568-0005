@@ -4,13 +4,14 @@ type Props = {}
 
 export default function Nav({ }: Props) {
     return (
-        <div className='h-[60px] bg-black w-full '>
-            <header className='flex items-center h-full'>
+        <div className='h-[60px] w-full '>
+           
+            <header className='flex items-center h-full ml-4 lg:ml-0'>
                 <Image
-                    src="/images/header.png"
+                    src="/images/header.svg"
                     alt="Hero Image"
-                    width={140}
-                    height={60}
+                    width={154}
+                    height={48}
                 />
             </header>
         </div>
